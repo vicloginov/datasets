@@ -21,6 +21,7 @@ from tensorflow_datasets.core import tf_compat
 tf_compat.ensure_tf_install()
 
 from tensorflow_datasets import core
+from tensorflow_datasets.core import custom_dataset
 from tensorflow_datasets.core import download
 from tensorflow_datasets.core import decode
 from tensorflow_datasets.core import features
@@ -51,6 +52,7 @@ with core.registered.skip_registration():
 __all__ = [
     "as_numpy",
     "core",
+    "custom_dataset",
     "builder",
     "builder_cls",
     "decode",
